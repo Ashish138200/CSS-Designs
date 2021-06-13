@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glass Texture</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        height: 100vh;
+        background: linear-gradient(to bottom,lightgray, black);
+        position: absolute;
+    }
+    #box{
+        position: relative;
+        height:12rem ;
+        width: 12rem;
+        margin: 13rem 20rem 0 40rem;
+        text-align: center;
+        padding: 2rem;
+        background: white;
+        border-radius: 50%;
+        box-shadow: darkgray 10px 10px 20px;
+        animation: bounce 3s 1 forwards ease-in;
+        animation-delay:0s;
+    }
+    @keyframes bounce {
+        from{
+            margin-top:-30rem ;
+        }
+        to{
+            margin-top: 29rem;
+        }
+    }
+    #box h1{
+        color: transparent;
+        opacity: 0.5;
+        text-shadow: 0 0 5px rgba(0,0,0,0.9);
+    }
+    #reflect {
+        -webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
+    }
+</style>
+<body>
+<div id="box">
+<h2>Hello, I am</h2>
+    <div id="reflect"><h1>Ashish Chaurasia</h1></div>
+</div>
+</body>
+</html>
